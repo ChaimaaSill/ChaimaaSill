@@ -1,0 +1,50 @@
+*{
+	background-color: #B6D0CF;
+}
+section, #theBody{
+	display: flex;
+}
+abbr, a{
+	text-decoration: none;
+	color: #000;
+}
+li{
+	list-style: none;
+}
+hr{
+	color: #D6DFDF;
+}
+.preamble{
+	flex: 2;
+}
+.head{
+	font-family: Lucida Bright, serif;
+	font-size: 20px;
+	align-content: center;
+	color: #16403F;
+	font-style: italic;
+
+}
+.head,.summary{
+	flex: 1;
+	align-content: center;
+}
+.participation, .benefits, .requirements{
+	background-color: #D6DFDF;
+	margin: 2em;
+}
+.explanation{
+	background-color: #D6DFDF;
+	width: 100%;
+}
+.explanation *{
+	background-color: #D6DFDF;
+	width: 100%;
+}
+.wrapper{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+
