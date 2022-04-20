@@ -4,25 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../Images/titleIcon.png" type="image/Icon">
+    <script src="https://kit.fontawesome.com/67abe72332.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="icon" href="Images/titleIcon.png" type="image/Icon">
     <title>Silla | WorldWide Music</title>
+    <script src="main.js"></script>
 </head>
 <body>
     <nav>
-        <div>
-            <img href="../Images/logo.png"/>
-            <form>
+        <div class="navbar">
+            <img src="Images/logo.png" alt="MyLogo"/>
+            <form class="loginPage">
+                <label id="errorMSG"></label>
                 <label>Username</label>
-                <input/>
+                <input class="input1" placeholder="Username" required/>
                 <label>Password</label>
-                <input/>
-                <button>Login</button>
+                <input class="input2" placeholder="Password" required/>
+                <button class="btn" type="button">Login</button>
             </form>
         </div>
+        <div class="homePage">
+            <input placeholder="Search..."/>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input class="btn" type="submit" value="Logout"/>
+        </div>
     </nav>
-    <div>
-        <h1>Welcome to Silla Music WebSite</h1>
-    </div>
 
+    <div class="homePage, middle">
+        <h1>Top Hits</h1>
+        <table id="table1">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Title</th>
+                <th scope="col">Released date</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+        </table>
+        <h1 class="middle">Your playlist</h1>
+        <table id="table2">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Title</th>
+                <th scope="col">Released date</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+        </table>
+    </div>
+    <article class="loginPage">
+        <h1>Welcome to Silla Music WebSite</h1>
+    </article>
+    <div>
+        <audio id="audio"></audio>
+        <i id="close" class="fa-thin fa-xmark"></i>
+    </div>
 </body>
 </html>
